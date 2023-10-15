@@ -2,8 +2,17 @@
 
 ### 執行說明
 
+```
+git clone https://github.com/tannerang/WrappedEtherTest.git
+
+cd WrappedEtherTest
+
+forge test 
+```
+
 ### 測試個案說明
 
+```
 testCase01
     testCase01_CheckBalanceOfUser()
     檢查 user1 deposit 之後的 WETH balanceOf() 是否等於 msg.value 的 10 Ether
@@ -43,3 +52,4 @@ testCase09
 testCase10
     testCase10_CheckTransferFromAllowance()
     檢查 user1 approve 給 user2 後，user2 是否成功執行 TransferFrom 將 7 WETH 從user1 轉給 user3 且 user2 的 Allowance 將剩下 3 WETH
+```
